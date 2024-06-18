@@ -1,0 +1,33 @@
+{
+  "name": "react-emage",
+  "version": "0.0.1",
+  "description": "Image component for react.",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [
+    "artisan <codes.artisan@gmail.com>"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "father": "^4.5.0-rc.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  }
+}
